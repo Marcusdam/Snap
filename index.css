@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    padding: 0 10%;
+    background: #f5f4f4;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.logo{
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none; 
+    margin-left: 50px;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;   
+}
+
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+    margin-top: 5px;
+    
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #949393;
+    font-size: 14px;
+
+}
+
+.link{
+    margin-left: 200px;
+
+}
+a:hover{
+    color: #000;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px ;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col img{
+    
+    max-width: 100%;
+    margin-top: 100px;
+    margin-left: -20px;
+   
+}
+.col h1{
+    font-size: 58px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    }
+
+.col p{
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: #888080;    
+}
+
+.col a{
+    
+    color: #555252;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 30px;
+    transition: .5s;
+}
+
+.col a:hover{
+    color: #000;
+    font-weight: 600;  
+}
+
+svg{
+    margin-right: 10px;
+}
+
+.icons{
+    
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.icons .col{
+    flex-basis: 10%;
+    min-width: 180px;
+}
+
+
+.dropdown{
+    position: absolute;
+    background: #fff;
+    margin-left: -40px;
+    visibility: hidden;
+    transition:  0.5s ease; 
+}
+.company{
+    position: absolute;
+    background: #888080;
+    margin-left: -40px;
+    visibility: hidden;
+    transition:  0.5s ease;
+    z-index: 1;
+}
+.drop-menu{
+    margin-top: 10px;
+        width: 150px;
+        max-height: 200px;
+        height: 160px;
+        background: #fff;
+        padding: 10px 10px;
+        border-radius: 8px;  
+    }
+    
+
+.company-menu{
+        width: 120px;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: 180px;
+        background: #fff;
+        padding: 10px 10px;
+        border-radius: 8px;
+        }
+
+.open-dropdown, .open-company{
+    visibility: visible;
+
+}
+.dropdown a, .company a{
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    padding: 6px 18px;
+    columns: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.menu-icon{
+    width: 18px;
+    margin-left: 20px; 
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        top:80px;
+        left: 0px;
+        background: #e7e6e6;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        transition: max-height .4s;
+        
+    }
+    .logo img{
+        margin-left: -24px;
+        
+       
+    }
+    
+
+    .menu{
+        max-height: 0px;
+    }
+    .open-menu{
+        max-height: 380px;
+    }
+    svg{
+        display: none;
+    }
+    .drop-menu, .drop-menu2{
+        display: none;
+        
+    }
+    nav ul li{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 0px 100px;
+        
+        
+    }
+    nav ul li a{
+        color: #000 ;
+        font-size: 24px;       
+    }
+
+    .menu-icon{
+        display: block;
+        margin-left: 200px;
+        
+        
+    }
+    .row .col img{
+        margin-left: 4px;
+        max-width:  100%;
+    }
+    .link{
+        display: none;
+        }
+    
+    .icons{
+        display: block;
+        margin-left: 30px;
+    }   
+    
+}
+@media only screen and (max-width:600px) {
+    nav ul{
+        display: inline-block;
+        
+        
+        
+
+    }
+    
+    
+    
+}
+
